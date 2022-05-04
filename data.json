@@ -1,0 +1,675 @@
+[
+    {
+        "title": "쌀/잡곡",
+        "arr":[{
+            "title": "백미/유(2kg)",
+            "price": "9,100",
+            "img": "white2k.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 1,
+            "tag": "인기",
+            "type": 1
+        },
+        {
+            "title": "백미/유(4kg)",
+            "price": "17,900",
+            "img": "white4k.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 2,
+            "tag": "인기",
+            "type": 2
+        },
+        {
+            "title": "귀리(유/500g)",
+            "price": "5,800",
+            "img": "good.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 3,
+            "tag": "인기",
+            "type": 3
+        },
+        {
+            "title": "현미/유(2kg)",
+            "price": "8,650",
+            "img": "smart.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 4,
+            "tag": "인기",
+            "type": 0
+        }
+        ]
+    },
+    
+    {
+        "title": "채소/버섯",
+        "arr":[{
+            "title": "콩나물(300g)",
+            "price": "1,450",
+            "img": "kong.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 1,
+            "tag": "인기",
+            "type": 1
+        },
+        {
+            "title": "오이(3개)",
+            "price": "2,500",
+            "img": "oi.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 2,
+            "tag": "인기",
+            "type": 2
+        },
+        {
+            "title": "시금치(300g)",
+            "price": "2,250",
+            "img": "green.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 3,
+            "tag": "인기",
+            "type": 3
+        },
+        {
+            "title": "깻잎(30장)",
+            "price": "1,050",
+            "img": "Perilla leaf!.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 4,
+            "tag": "인기",
+            "type": 0
+        }
+        ]
+    },
+    {
+        "title": "과일/견과",
+        "arr":[{
+            "title": "참외(1kg)",
+            "price": "9,900",
+            "img": "watermelon.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 1,
+            "tag": "인기",
+            "type": 1
+        },
+        {
+            "title": "사과/유(1.5kg)",
+            "price": "14,500",
+            "img": "apple.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 2,
+            "tag": "인기",
+            "type": 2
+        },
+        {
+            "title": "볶은알땅콩(무/300g)",
+            "price": "9,400",
+            "img": "nuts.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 3,
+            "tag": "인기",
+            "type": 3
+        },
+        {
+            "title": "참외(2kg)",
+            "price": "18,500",
+            "img": "watermelon2.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 4,
+            "tag": "인기",
+            "type": 0
+        }
+        ]
+    },
+    {
+        "title": "축산/축산가공",
+        "arr":[{
+            "title": "유정란(15일/국내산)",
+            "price": "6,250",
+            "img": "eggs.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 1,
+            "tag": "인기",
+            "type": 1
+        },
+        {
+            "title": "유정란(안심대안사료/15알)",
+            "price": "7,550",
+            "img": "eggs2.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 2,
+            "tag": "인기",
+            "type": 2
+        },
+        {
+            "title": "양념닭갈비(500g)",
+            "price": "12,100",
+            "img": "chiken.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 3,
+            "tag": "인기",
+            "type": 3
+        },
+        {
+            "title": "구운유정란(6알)",
+            "price": "3,900",
+            "img": "bake.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 4,
+            "tag": "인기",
+            "type": 0
+        }
+        ]
+    },
+    {
+        "title": "수산/수산가공",
+        "arr":[{
+            "title": "구운전장김(40g)",
+            "price": "2,700",
+            "img": "Laver.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 1,
+            "tag": "인기",
+            "type": 1
+        },
+        {
+            "title": "구운도시락김(4g*9봉)",
+            "price": "3,900",
+            "img": "Lavers.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 2,
+            "tag": "인기",
+            "type": 2
+        },
+        {
+            "title": "김자반볶음(40g)",
+            "price": "2,300",
+            "img": "Laverof.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 3,
+            "tag": "인기",
+            "type": 3
+        },
+        {
+            "title": "구운김밥김(10장)",
+            "price": "1,850",
+            "img": "Laverkimbob.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 4,
+            "tag": "인기",
+            "type": 0
+        }
+        ]
+    },
+    {
+        "title": "반찬/양념/가루",
+        "arr":[{
+            "title": "두부(420g)",
+            "price": "2,150",
+            "img": "dubu.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 1,
+            "tag": "인기",
+            "type": 1
+        },
+        {
+            "title": "무농약콩으로만든두부(300g",
+            "price": "2,500",
+            "img": "kongdubu.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 2,
+            "tag": "인기",
+            "type": 2
+        },
+        {
+            "title": "연두부",
+            "price": "450",
+            "img": "softdubu.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 3,
+            "tag": "인기",
+            "type": 3
+        },
+        {
+            "title": "연두부(300g)",
+            "price": "1,050",
+            "img": "softbigdubu.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 4,
+            "tag": "인기",
+            "type": 0
+        }
+        ]
+    },
+    {
+        "title": "식사대용/간편식",
+        "arr":[{
+            "title": "동치미냉면육수(330g)",
+            "price": "1,450",
+            "img": "dong.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 1,
+            "tag": "인기",
+            "type": 1
+        },
+        {
+            "title": "순한 감자라면(110g/1봉)",
+            "price": "1,400원",
+            "img": "kind.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 2,
+            "tag": "인기",
+            "type": 2
+        },
+        {
+            "title": "호박죽(280g)",
+            "price": "2,600원",
+            "img": "pumkin.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 3,
+            "tag": "인기",
+            "type": 3
+        },
+        {
+            "title": "매운감자라면(110g/1봉)",
+            "price": "17,900",
+            "img": "hot.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 4,
+            "tag": "인기",
+            "type": 0
+        }
+        ]
+    },
+    {
+        "title": "간식/음료/유제품",
+        "arr":[{
+            "title": "유기농우유(종이팩/900ml)",
+            "price": "4,200",
+            "img": "milk.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 1,
+            "tag": "인기",
+            "type": 1
+        },
+        {
+            "title": "블루베리요구르트(120ml)",
+            "price": "1,300",
+            "img": "blueberry.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 2,
+            "tag": "인기",
+            "type": 2
+        },
+        {
+            "title": "감자대롱(50g)",
+            "price": "1,900",
+            "img": "potato.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 3,
+            "tag": "인기",
+            "type": 3
+        },
+        {
+            "title": "유기농딸기요구르트(200ml)",
+            "price": "1,800원",
+            "img": "redberry.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 4,
+            "tag": "인기",
+            "type": 0
+        }
+        ]
+    },
+    {
+        "title": "건강/차",
+        "arr":[{
+            "title": "유기보리차(500g)",
+            "price": "3,750원",
+            "img": "borry.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 1,
+            "tag": "인기",
+            "type": 1
+        },
+        {
+            "title": "레몬차(460g)",
+            "price": "8,700원",
+            "img": "yuja.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 2,
+            "tag": "인기",
+            "type": 2
+        },
+        {
+            "title": "채소액(유기/150ml*30봉)",
+            "price": "27,500",
+            "img": "vegetable.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 3,
+            "tag": "인기",
+            "type": 3
+        },
+        {
+            "title": "bro.jpg",
+            "price": "25,300",
+            "img": "bro.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 4,
+            "tag": "인기",
+            "type": 0
+        }
+        ]
+    },
+    {
+        "title": "화장품/오가닉코튼",
+        "arr":[{
+            "title": "수피아 알로에베라잎즙 수딩젤(150㎖)",
+            "price": "6,700",
+            "img": "suding.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 1,
+            "tag": "인기",
+            "type": 1
+        },
+        {
+            "title": "수피아 내츄럴 썬로션(50g)",
+            "price": "8,000원",
+            "img": "sun.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 2,
+            "tag": "인기",
+            "type": 2
+        },
+        {
+            "title": "미요담 비타민 미백앰플(50㎖)",
+            "price": "19,000",
+            "img": "mibak.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 3,
+            "tag": "인기",
+            "type": 3
+        },
+        {
+            "title": "수피아 누리봄 온몸용로션(250㎖)",
+            "price": "9,800",
+            "img": "fullbody.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 4,
+            "tag": "인기",
+            "type": 0
+        }
+        ]
+    },
+    {
+        "title": "주방/욕실/세정",
+        "arr":[{
+            "title": "주방용살균수/보충용:(400㎖)",
+            "price": "3,700",
+            "img": "kichin.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 1,
+            "tag": "인기",
+            "type": 1
+        },
+        {
+            "title": "액상세제(보충용:2.1ℓ",
+            "price": "10,000",
+            "img": "clean.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 2,
+            "tag": "인기",
+            "type": 2
+        },
+        {
+            "title": "수피아 손세정제(보충용:500㎖)",
+            "price": "4,800",
+            "img": "handclean.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 3,
+            "tag": "인기",
+            "type": 3
+        },
+        {
+            "title": "물사랑감귤식초주방세제(보충용:1000㎖)",
+            "price": "7,800",
+            "img": "mandarin.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 4,
+            "tag": "인기",
+            "type": 0
+        }
+        ]
+    },
+    {
+        "title": "휴지/생활",
+        "arr":[{
+            "title": "숲사랑 3겹둥근휴지(18롤)",
+            "price": "11,800",
+            "img": "threepaper",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 1,
+            "tag": "인기",
+            "type": 1
+        },
+        {
+            "title": "숲사랑 미용사각휴지(3상자)",
+            "price": "3,700",
+            "img": "paper.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 2,
+            "tag": "인기",
+            "type": 2
+        },
+        {
+            "title": "숲사랑 주방흊;(6롤)",
+            "price": "5,700",
+            "img": "kitchin.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 3,
+            "tag": "인기",
+            "type": 3
+        },
+        {
+            "title": "달맞이생리대 중형(25cm/16개입)",
+            "price": "4,100",
+            "img": "moon.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 4,
+            "tag": "인기",
+            "type": 0
+        }
+        ]
+    },
+    {
+        "title": "반려동물",
+        "arr":[{
+            "title": "반려동물 닭가슴살유포(60g)",
+            "price": "5,000",
+            "img": "chest.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 1,
+            "tag": "인기",
+            "type": 1
+        },
+        {
+            "title": "반려동물 닭가슴살·단호박큐브(60g)",
+            "price": "15,000",
+            "img": "hobak.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 2,
+            "tag": "인기",
+            "type": 2
+        },
+        {
+            "title": "생협함께 반려견 사료(전연령/1.6kg)",
+            "price": "15,000",
+            "img": "dogfood.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 3,
+            "tag": "인기",
+            "type": 3
+        },
+        {
+            "title": "반려견 영양제(완벽하군/250g)",
+            "price": "21,000원",
+            "img": "dogvitamin.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 4,
+            "tag": "인기",
+            "type": 0
+        }
+        ]
+    },
+    {
+        "title": "대용량/어린이집",
+        "arr":[{
+            "title": "닭다리순살(1kg/국내산)",
+            "price": "20,600",
+            "img": "fillet.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 1,
+            "tag": "인기",
+            "type": 1
+        },
+        {
+            "title": "튀김옷돈가스(1kg)",
+            "price": "17,900",
+            "img": "fry.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 2,
+            "tag": "인기",
+            "type": 2
+        },
+        {
+            "title": "얼린오징어(1kg/4~5마리)",
+            "price": "16,500",
+            "img": "squid.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 3,
+            "tag": "인기",
+            "type": 3
+        },
+        {
+            "title": "돼지불고기용(1kg/우리보리살림돼지)",
+            "price": "16,800",
+            "img": "pig.jpg",
+            "cate": "",
+            "link": "#",
+            "buy": "#",
+            "id": 4,
+            "tag": "인기",
+            "type": 0
+        }
+        ]
+    }
+]
