@@ -1,5 +1,19 @@
 $(document).ready(function () {
+    // 비주얼 모달창
+    let visual_modal_open = $(".sw-visual-bt");
+    let visual_modal_close = $(".visual-modal-close");
+    let visual_modal = $(".visual-modal");
 
+    visual_modal_open.click(function () {
+        visual_modal.fadeIn();
+        $('html').css('overflow', 'hidden');
+    });
+
+    visual_modal_close.click(function () {
+        visual_modal.fadeOut();
+        $('html').css('overflow', 'auto');
+    });
+    
     // 전체 메뉴 관련
     let all_menu_wrap = $('.all-menu-wrap');
     all_menu_wrap.niceScroll({
@@ -251,8 +265,7 @@ window.onload = function () {
         },
     });
     
-    // Popular 의 출력을 위한 데이터
-    
+    // Popular 의 출력을 위한 데이터    
     // 카테고리별 데이터
     let data_arr = [];
     // 타이틀 데이터
@@ -260,7 +273,7 @@ window.onload = function () {
 
     // HTTP Request: 서버에 자료를 요청하는 것
     // HTTP Response: 서버에서 응답 오는 것
-    fetch('./data.json')
+    fetch('/data.json')
     .then(res => res.json())
     .then(result => {
         for(let i = 0; i < result.length; i++) {
@@ -270,7 +283,7 @@ window.onload = function () {
         }  
         // 비동기로 데이터를 가져오기 때문에 정리 가 끝나면 목록 출력
         p_change(data_arr[0]);
-        $('.section-bt').text(`${data_title[0]} 더보기`);
+        $('.popular-top .section-bt').text(`${data_title[0]} 더보기`);
     });    
 
     // Popular 버튼 클릭시 실행 
@@ -392,6 +405,194 @@ window.onload = function () {
         },
     });
 
+    // 오늘의 요리 관련
+    let cook_arr = [];
+    // cook.json 파일 관련
+    let cook_json = 'cook.json';
+    // cook 자료를 배치할 html 요소
+    let cook_list = $('.cook-list');
+    // cook html 텍스트 
+    let cook_html = '';
+
+    // 체크 버튼 저장
+    let cook_bt;
+    // 전체 선택 버튼 저장
+    let cook_bt_all = $('.cook-total .cook-bt');
+
+    // 스크롤바 표시
+    let cook_wrap = $('.cook-wrap');
+   
+    // 데이터를 불러들여서 파싱(분해) 한다.
+    fetch(cook_json)
+    .then(res => res.json())
+    .then(result => {
+        
+        for(let i = 0; i < result.length; i++){
+            cook_arr[i] = result[i];
+            // 미리 숫자로 변경을 해준다: json 은 문자열로 오기 때문에
+            cook_arr[i].cook_price = parseInt(cook_arr[i].cook_price);
+            // 처음에 데이터를 가지고 오면 모두 선택되었다.
+            cook_arr[i].cook_check = 1;
+        }
+        // 데이터를 화면에 표현한다.
+        // cook_html 을 만들어낸다.
+        for(let i = 0; i < cook_arr.length; i++){
+            // 각각의 객체 데이터가 잘 추출되는지 확인하고 싶다.
+            // console.log(cook_arr[i]);
+            let temp = cook_arr[i];
+            cook_html += `<li>
+                    <button class="cook-bt"></button>
+                    <a href="${temp.cook_link}" class="cook-good">
+                        <img src="images/${temp.cook_pic}" alt="${temp.cook_name}">
+                        <p class="cook-good-info">
+                            <span class="cook-good-title">${temp.cook_name}${temp.cook_info}</span>
+                            <span class="cook-good-price">
+                                <b>${temp.cook_price.toLocaleString()}</b>원
+                            </span>
+                        </p>
+                    </a>
+                </li>`;
+        }
+        // html 로 삽입해 준다.
+        cook_list.html(cook_html);
+        // html 이 존재하므로 아래 변수 셋팅됨
+        cook_bt = cook_list.find('.cook-bt');
+        // niceScroll 배치
+        cook_wrap.niceScroll({
+            cursoropacitymax : 0.3,
+            cursorwidth: "7px",
+            cursorborderradius: "10px",
+        });
+
+        makeCookBt();
+
+        // 전체 가격을 입력해준다.
+        cookCalc();
+    })
+    .catch();   
     
+    // 총 계산 값 입력하기
+    // 총 값이 나오는 자리 html 요소
+    let cook_price_total = $('#cook-price-total');
+    // 장바구니 카운팅
+    let bucket_i = $('.bucket i');
+    // 장바구니 담기 버튼
+    let cook_link = $('.cook-link');
+    let count = 0;
+    // 전체 선택 개수
+    let cook_count = $('#cook-count');
+
+    // 총 선택된 값을 계산하는 함수 생성 
+    function cookCalc(){
+        let total = 0;
+        count = 0;
+        for(let i = 0; i < cook_arr.length; i++){
+            if(cook_arr[i].cook_check == 1) {
+                total += cook_arr[i].cook_price;  
+                count++;              
+            }
+        }
+        cook_price_total.html(total.toLocaleString());
+        cook_count.text(count);       
+
+    }
+
+    cook_link.click(function(event){
+        event.preventDefault();
+        bucket_i.text(count);
+        bucket_i.removeClass('updown-ani');
+        setTimeout(function() {
+            bucket_i.addClass('updown-ani');
+         }, 500);
+        // bucket_i.addClass('updown-ani');
+    });
+
+    // 체크 기능 만들기
+    function makeCookBt() {
+        $.each(cook_bt, function(index, item){
+            $(this).click(function(event) {
+                // 이벤트 전달방지
+                event.stopPropagation();
+                cook_arr[index].cook_check *= -1;
+                                
+                // 체크버튼 모양 변경
+                $(this).toggleClass('cook-bt-false');
+                // 전체 가격 새로 계산
+                cookCalc();
+                // 전체 선택 버튼 기능
+                cookAllBt();
+            });
+        });
+    }
+    // 전체 선택 버튼 기능
+    // 전체 선택 여부
+    let cook_all_check = 1;
+
+    function cookAllBt(){
+        for(let i = 0; i < cook_arr.length; i++){
+            if(cook_arr[i].cook_check != 1) {
+                // 체크가 해제되었다.
+                cook_all_check = 0;
+                break;
+            }else{
+                cook_all_check = 1;
+            }
+        }
+
+        if(cook_all_check == 1) {
+            cook_bt_all.removeClass('cook-bt-false');
+        }else{
+            cook_bt_all.addClass('cook-bt-false');
+        }
+    }
+    // 전체 선택 버튼 처리
+    cook_bt_all.click(function(event){
+        event.stopPropagation();
+        if(cook_all_check == 1) {
+            cook_all_check = 0;
+        }else{
+            cook_all_check = 1;
+        }
+        if(cook_all_check == 1) {
+            for(let i = 0; i < cook_arr.length; i++){
+                cook_arr[i].cook_check = 1;
+            }
+        }else{
+            for(let i = 0; i < cook_arr.length; i++){
+                cook_arr[i].cook_check = -1;
+            }
+        }
+
+        $.each(cook_bt, function(index, item){
+            if(cook_all_check == 1) {
+                $(this).removeClass('cook-bt-false');
+            }else{
+                $(this).addClass('cook-bt-false');
+            }
+        });
+
+        if(cook_all_check == 1) {
+            cook_bt_all.removeClass('cook-bt-false');
+        }else{
+            cook_bt_all.addClass('cook-bt-false');
+        }
+
+        cookCalc();
+
+    });
+
+   // 공지사항 탭메뉴
+    let notice_btn = $(".notice-menu button");
+    let notice_list = $(".notice-list");
+
+    $.each(notice_btn, function (index) {
+        $(this).click(function () {
+        notice_btn.removeClass("notice-menu-focus");
+        notice_list.removeClass("notice-list-focus");
+
+        notice_btn.eq(index).addClass("notice-menu-focus");
+        notice_list.eq(index).addClass("notice-list-focus");
+        });
+    });
 
 };
