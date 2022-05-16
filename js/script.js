@@ -1,4 +1,10 @@
 $(document).ready(function () {
+    // 모달창
+    let modal= $('.modal');
+    let modal_close=$('.modal-close');
+    modal_close.click(function(){
+        modal.hide();
+    });
     // 비주얼 모달창
     let visual_modal_open = $(".sw-visual-bt");
     let visual_modal_close = $(".visual-modal-close");
